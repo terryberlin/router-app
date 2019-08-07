@@ -1,14 +1,18 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SideBar = ({ match }) => {
   return (
     <ul>
       <ul>
-        <Link to="/admin/posts">Posts</Link>
+        <NavLink className="nav-item nav-link" to="/admin/posts">
+          Posts
+        </NavLink>
       </ul>
       <ul>
-        <Link to="/admin/users">Users</Link>
+        <NavLink className="nav-item nav-link" to="/admin/users">
+          Users
+        </NavLink>
       </ul>
     </ul>
   );
